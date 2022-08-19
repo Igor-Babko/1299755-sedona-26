@@ -2,23 +2,24 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body container">
-
   <header class="main-header">
-
-    <a href="#" class="logo">
-      <img src="/source/img/logo.png" alt="logo" class="logo-img">
+    <a class="main-header__logo logo" href="#">
+      <img class="logo__img" src="/img/logo.png" alt="logo">
     </a>
     <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-navigation">
-        <li class="main-nav__item site-list__item--active">
+        <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link" href="index.html">ГЛАВНАЯ</a>
         </li>
         <li class="main-nav__item">
@@ -31,78 +32,76 @@
     </nav>
   </header>
 
-  <main class="main-container hero">
-    <section class="welcome-screen">
+  <main class="main-container">
+    <section class="main-container__hero hero">
       <h2 class="visually-hidden">
         Приветственный текст и фотография
       </h2>
-      <img class="hero__background" src="/source/img/back-desktop.jpg.png" alt="Фотография Седоны">
-      <img class="hero__words" src="/source/img/text-index.svg.png" alt="Приветственный слова">
-      <img class="hero__background-triangle" src="/source/img/white_triangle.png" alt="белые треугольники">
+      <img class="hero__background" src="img/back-desktop.jpg.png" alt="Фотография Седоны">
+      <img class="hero__words" src="img/text-index.svg.png" alt="Приветственный слова">
+      <img class="hero__background-triangle" src="img/intro-triangle.svg.png" alt="белые треугольники">
     </section>
 
-    <div class="head-info">
-      <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
-      <p class="head-info__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="head-info__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <img class="head-info__background-triangle" src="/source/img/white_triangle_2.png" alt="белый треугольник">
-    </div>
-
-    <section class="description">
-      <div class="description-wrapper">
+    <section class="main-container__description description">
+      <div class="description__head-info head-info">
+        <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
+        <p class="head-info__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="head-info__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <div class="description__wrapper">
         <h2 class="visually-hidden">Описание Седоны</h2>
         <ol class="description-list">
           <li class="description-item">
-            <div class="description-item description-item--type-dark">
-              <h3 class="description-item__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <p class="description-item__number">— №1 —</p>
-              <p class="description-item__text">Седона не аттракцион для туристов, в нем течет своя жизнь</p>
-              <img class="photo-city" src="/source/img/photo-city@1x.png" alt="фотография города">
+            <div class="description-item__wrap content description-item--type-dark">
+              <div class="description-item__wrapper">
+                <h3 class="description-item__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <p class="description-item__number">— №1 —</p>
+                <p class="description-item__text">Седона не аттракцион для туристов, в нем течет своя жизнь</p>
+                <img class="description-item__photo" src="img/photo-city@1x.png" alt="фотография города">
+              </div>
             </div>
             <ul class="city-info">
               <li class="city-info__item">
-                <img class="city-info__image" src="/source/img/icon-house.svg.svg" alt="иконка дома" aria-hidden="true">
+                <img class="city-info__image" src="img/icon-house.svg.svg" alt="иконка дома" aria-hidden="true">
                 <h4 class="city-info__title">ЖИЛЬЕ</h4>
                 <p class="city-info__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="city-info__item">
-                <img class="city-info__image" src="/source/img/icon-burger.svg.svg" alt="иконка бургера"
-                  aria-hidden="true">
+                <img class="city-info__image" src="img/icon-burger.svg.svg" alt="иконка бургера" aria-hidden="true">
                 <h4 class="city-info__title">ЕДА</h4>
                 <p class="city-info__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="city-info__item">
-                <img class="city-info__image" src="/source/img/icon-gift.svg.svg" alt="иконка подарка"
-                  aria-hidden="true">
+                <img class="city-info__image" src="img/icon-gift.svg.svg" alt="иконка подарка" aria-hidden="true">
                 <h4 class="city-info__title">СУВЕНИРЫ</h4>
                 <p class="city-info__text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="description-item">
-            <div class="description-item description-item--type-dark">
+            <div class="description-item__wrap description-item--type-dark">
               <h3 class="description-item__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p class="description-item__number">— №2 —</p>
               <p class="description-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img src="/source/img/photo-bridge@1x.png" alt="фото моста" class="info-item__photo-bridge">
+              <img class="description-item__photo" src="img/photo-bridge@1x.png" alt="фото моста">
             </div>
           </li>
           <li class="description-item">
-            <div class="description-item description-item--type-light">
+            <div class="description-item__wrap description-item--type-light">
               <h3 class="description-item__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
               <p class="description-item__number">— №3 —</p>
               <p class="description-item__text">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="description-item">
-            <div class="description-item description-item--type-light">
+            <div class="description-item__wrap description-item--type-light">
               <h3 class="description-item__title">КРАСИВАЯ ДОРОГА</h3>
               <p class="description-item__number">— №4 —</p>
               <p class="description-item__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="description-item">
-            <div class="description-item description-item--type-light">
+            <div class="description-item__wrap description-item--type-light">
               <h3 class="description-item__title">МАЛО ТУРИСТОВ</h3>
               <p class="description-item__number">— №5 —</p>
               <p class="description-item__text">Большинство едет в гранд каньон и толпится там</p>
@@ -118,16 +117,17 @@
       <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
       <a class="offer__button button" href="#">НАЙТИ ГОСТИННИЦУ</a>
+      <div class="offer__map map">
+        <img class="map__block" src="img/map-tablet.jpg.jpg" alt="Карта с расположением Седоны">
+      </div>
     </section>
-    <div class="offer__map">
-      <img class="map__block" src="/source/img/map-tablet.jpg.jpg" alt="Карта с расположением Седоны">
-    </div>
+
 
   </main>
   <footer class="main-footer">
     <div class="main-footer__hashtag hashtag">
       <a href="#" class="hashtag__link">
-        <span class="hashtag">#visitsedona</span>
+        <span class="hashtag__label">#visitsedona</span>
       </a>
     </div>
 
@@ -136,17 +136,17 @@
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/vk.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/vk.svg" alt="Иконка социальной сети">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/tg.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/tg.svg" alt="Иконка социальной сети">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/youtube.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/youtube.svg" alt="Иконка социальной сети">
           </a>
         </li>
       </ul>
@@ -155,7 +155,7 @@
       <h2 class="copyright__title">Разработано</h2>
       <a class="copyright__link" href="https://htmlacademy.ru">
         <span class="visually-hidden">"Html Academy"</span>
-        <img src="/source/img/htmlacademy.svg.svg" alt="Лого Академии">
+        <img src="img/htmlacademy.svg.svg" alt="Лого Академии">
       </a>
     </section>
   </footer>

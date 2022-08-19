@@ -10,3 +10,4 @@ sass/
 | - style.scss
 | - [другие *.scss файлы]
 | - [или подпапки с другими *.scss файлами]
+npm run lint
