@@ -6,19 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body container">
   <header class="main-header">
-    <a href="#" class="logo">
-      <img src="/source/img/logo.png" alt="logo" class="logo-img">
+    <a class="main-header__logo" href="#">
+      <img class="main-header__logo-img" src="img/logo.png" alt="logo">
     </a>
     <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle button" type="button">
+      <button class="main-nav__toggle toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-navigation">
-        <li class="main-nav__item site-list__item--active">
+        <li class="main-nav__item main-nav__item--active">
           <a class="main-nav__link" href="index.html">ГЛАВНАЯ</a>
         </li>
         <li class="main-nav__item">
@@ -31,73 +32,74 @@
     </nav>
   </header>
 
-  <main class="catalog">
-    <section class="catalog__header hero">
+  <main class="main-container">
+    <section class="hero-custom hero">
       <h2 class="visually-hidden">
         Приветственный текст и фотография
       </h2>
-      <img class="hero__background" src="/source/img/main-form.jpg" alt="Фотография Седоны">
-      <img class="hero__words" src="/source/img/SEDONA.png" alt="Приветственный слова">
-      <img class="hero__background-triangle" src="/source/img/white_triangle.png" alt="белые треугольники">
+      <img class="hero-custom__background" src="img/main-form.jpg" alt="Фотография Седоны">
+      <img class="hero-custom__words" src="img/SEDONA.png" alt="Приветственный слова">
+      <img class="hero-custom__background-triangle" src="img/intro-triangle.svg.png" alt="белые треугольники">
     </section>
-    <section class="catalog__media">
-      <h1 class="visually-hidden">Страница с каталогом фото и видео</h1>
-      <h2 class="catalog___main-title">Фото и видео</h2>
-      <p class="catalog___main-subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-        политике и экономике.</p>
-    </section>
-    <section class="catalog__photos photos">
+
+    <section class="photos">
+      <div class="head-info">
+        <h1 class="visually-hidden">Страница с каталогом фото и видео</h1>
+        <h2 class="head-info__title">Фото и видео</h2>
+        <p class="head-info__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
       <h2 class="visually-hidden">Фотографии окресностей Седоны</h2>
       <div class="photos__wrapper">
         <ul class="photos__list">
           <li class="photos__item">
-            <img class="photos__photo" src="/source/img/photo-1-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
+            <img class="photos__photo" src="img/photo-1-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
             <div class="photos__description">
               <h3 class="photos__subtitle">неродные просторы</h3>
               <p class="photos__author">Автор фото: Борис</p>
             </div>
             <div class="photos__like-wrapper">
               <button class="photos__like-toggle">
-                <img src="/source/img/like-icon.svg.svg" alt="Картинка лайка" class="photos__like-image">
+                <img class="photos__like-image" src="img/like-icon.svg.svg" alt="Картинка лайка">
               </button>
               <p class="photos__like-count">1350</p>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" src="/source/img/photo-2-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
+            <img class="photos__photo" src="img/photo-2-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
             <div class="photos__description">
               <h3 class="photos__subtitle">Местная растительность</h3>
               <p class="photos__author">Автор фото: Сергей</p>
             </div>
             <div class="photos__like-wrapper">
               <button class="photos__like-toggle">
-                <img src="/source/img/like-icon.svg.svg" alt="Картинка лайка" class="photos__like-image">
+                <img class="photos__like-image" src="img/like-icon.svg.svg" alt="Картинка лайка">
               </button>
               <p class="photos__like-count">143</p>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" src="/source/img/photo-3-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
+            <img class="photos__photo" src="img/photo-3-mobile.jpg.jpg" alt="Фотография окресностей Седоны">
             <div class="photos__description">
               <h3 class="photos__subtitle">Дорога на север</h3>
               <p class="photos__author">Автор фото: Петр</p>
             </div>
             <div class="photos__like-wrapper">
               <button class="photos__like-toggle">
-                <img src="/source/img/like-icon.svg.svg" alt="Картинка лайка" class="photos__like-image">
+                <img class="photos__like-image" src="img/like-icon.svg.svg" alt="Картинка лайка" >
               </button>
               <p class="photos__like-count">96</p>
             </div>
           </li>
           <li class="photos__item">
-            <img class="photos__photo" src="/source/img/photo-4-desktop.jpg.jpg" alt="Фотография окресностей Седоны">
+            <img class="photos__photo" src="img/photo-4-desktop.jpg.jpg" alt="Фотография окресностей Седоны">
             <div class="photos__description">
               <h3 class="photos__subtitle">Мост дьявола</h3>
               <p class="photos__author">Автор фото: Антон</p>
             </div>
             <div class="photos__like-wrapper">
               <button class="photos__like-toggle">
-                <img src="/source/img/like-icon.svg.svg" alt="Картинка лайка" class="photos__like-image">
+                <img class="photos__like-image" src="img/like-icon.svg.svg" alt="Картинка лайка" >
               </button>
               <p class="photos__like-count">254</p>
             </div>
@@ -105,20 +107,20 @@
         </ul>
       </div>
     </section>
-    <section class="catalog__video video">
+    <section class="video">
       <h2 class="visually-hidden">Видео презентация окресностей</h2>
       <div class="video__wrapper">
         <h3 class="video__title">Все еще сомневаетесь?</h3>
         <p class="video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
-        <img src="/source/img/video-mobile.jpg.png" alt="Видео с окресностей Седоны">
+        <img class="video__content" src="img/video-mobile.jpg.png" alt="Видео с окресностей Седоны">
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__hashtag hashtag">
       <a href="#" class="hashtag__link">
-        <span class="hashtag">#visitsedona</span>
+        <span class="hashtag__label">#visitsedona</span>
       </a>
     </div>
 
@@ -127,26 +129,26 @@
       <ul class="social__list">
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/vk.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/vk.svg" alt="Иконка социальной сети">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/tg.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/tg.svg" alt="Иконка социальной сети">
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link">
-            <img class="social__image" src="/source/img/youtube.svg" alt="Иконка социальной сети">
+            <img class="social__image" src="img/youtube.svg" alt="Иконка социальной сети">
           </a>
         </li>
       </ul>
     </section>
     <section class="main-footer__copyright copyright">
       <h2 class="copyright__title">Разработано</h2>
-      <a class="copyright__link" href="https://htmlacademy.ru">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">"Html Academy"</span>
-        <img src="/source/img/htmlacademy.svg.svg" alt="Лого Академии">
+        <img class="copyright__image" src="img/htmlacademy.svg.svg" alt="Лого Академии">
       </a>
     </section>
   </footer>
