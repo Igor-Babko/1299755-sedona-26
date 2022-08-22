@@ -11,8 +11,8 @@
 
 <body class="page__body container">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <img class="logo__img" src="/img/logo.png" alt="logo">
+    <a class="main-header__logo" href="#">
+      <img class="main-header__logo-img" src="img/logo.png" alt="logo">
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle toggle" type="button">
@@ -37,7 +37,14 @@
       <h2 class="visually-hidden">
         Приветственный текст и фотография
       </h2>
-      <img class="hero__background" src="img/back-desktop.jpg.png" alt="Фотография Седоны">
+      <picture class="hero__picture">
+        <source srcset="img/index-hero-background-mobile.webp" class="hero__background" type="image/webp"
+          media="(max-width: 768px)">
+        <source srcset="img/index-hero-background-mobile.png" class="hero__background" media="(max-width: 768px)">
+        <source srcset="img/index-hero-background-tablet&PC.webp" class="hero__background" type="image/webp">
+        <source srcset="img/index-hero-background-tablet&PC.png" class="hero__background">
+        <img class="hero__background" src="img/index-hero-background-mobile.png" alt="Фотография Седоны">
+      </picture>
       <img class="hero__words" src="img/text-index.svg.png" alt="Приветственный слова">
       <img class="hero__background-triangle" src="img/intro-triangle.svg.png" alt="белые треугольники">
     </section>
@@ -57,8 +64,8 @@
                 <h3 class="description-item__title">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <p class="description-item__number">— №1 —</p>
                 <p class="description-item__text">Седона не аттракцион для туристов, в нем течет своя жизнь</p>
-                <img class="description-item__photo" src="img/photo-city@1x.png" alt="фотография города">
               </div>
+              <img class="description-item__photo" src="img/photo-city@1x.png" alt="фотография города">
             </div>
             <ul class="city-info">
               <li class="city-info__item">
@@ -79,7 +86,7 @@
             </ul>
           </li>
           <li class="description-item">
-            <div class="description-item__wrap description-item--type-dark">
+            <div class="description-item__wrap description-item__wrap--type-dark">
               <h3 class="description-item__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p class="description-item__number">— №2 —</p>
               <p class="description-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -153,7 +160,7 @@
     </section>
     <section class="main-footer__copyright copyright">
       <h2 class="copyright__title">Разработано</h2>
-      <a class="copyright__link" href="https://htmlacademy.ru">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">"Html Academy"</span>
         <img class="copyright__image" src="img/htmlacademy.svg.svg" alt="Лого Академии">
       </a>

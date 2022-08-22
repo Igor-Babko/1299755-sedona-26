@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "hero-custom.scss"
+    ],
+    "names": [],
+    "file": "hero-custom.css"
+}

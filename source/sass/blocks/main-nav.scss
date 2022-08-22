@@ -1,0 +1,13 @@
+.main-nav__item {
+  background-color: $color1;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav__link {
+  @include title-phones;
+  color: $font-color2;
+  text-decoration: none;
+}
