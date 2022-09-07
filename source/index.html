@@ -34,19 +34,10 @@
 
   <main class="main-container">
     <section class="main-container__hero hero">
-      <h2 class="visually-hidden">
-        Приветственный текст и фотография
-      </h2>
-      <picture class="hero__picture">
-        <source srcset="img/index-hero-background-mobile.webp" class="hero__background" type="image/webp"
-          media="(max-width: 768px)">
-        <source srcset="img/index-hero-background-mobile.png" class="hero__background" media="(max-width: 768px)">
-        <source srcset="img/index-hero-background-tablet&PC.webp" class="hero__background" type="image/webp">
-        <source srcset="img/index-hero-background-tablet&PC.png" class="hero__background">
-        <img class="hero__background" src="img/index-hero-background-mobile.png" alt="Фотография Седоны">
-      </picture>
-      <img class="hero__words" src="img/text-index.svg.png" alt="Приветственный слова">
-      <img class="hero__background-triangle" src="img/intro-triangle.svg.png" alt="белые треугольники">
+      <h1 class="visually-hidden">
+        Добро пожаловать в Седону!
+      </h1>
+      <img class="main-container__hero-words" src="img/text-index-mob.svg" alt="Приветственный слова">
     </section>
 
     <section class="main-container__description description">
@@ -57,64 +48,75 @@
       </div>
       <div class="description__wrapper">
         <h2 class="visually-hidden">Описание Седоны</h2>
-        <ol class="description-list">
-          <li class="description-item description-item--type-dark">
-            <div class="description-item__wrap">
-              <div class="description-item__wrapper">
+        <ul class="description-list">
+          <li class="description-item">
+            <div class="description-item__wrap description-item__wrap--block-connection description-item__wrap--type-dark">
+              <div class="description-item__wrapper description-item__wrapper--type-dark triangle">
+                <div class="description-item__container">
                 <h3 class="description-item__title">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <p class="description-item__number">— №1 —</p>
                 <p class="description-item__text">Седона не аттракцион для туристов, в нем течет своя жизнь</p>
-              </div>
-              <img class="description-item__photo" src="img/photo-city@1x.png" alt="фотография города">
+              </div></div>
+              <picture class="description-item__photo">
+                <source srcset="/img/photo-city-index@1x.png" media="(min-width: 1200px)">
+                <img class="description-item__photo" src="img/photo-city@1x.png" alt="фотография города">
+              </picture>
+
             </div>
             <ul class="city-info">
               <li class="city-info__item">
                 <img class="city-info__image" src="img/icon-house.svg.svg" alt="иконка дома" aria-hidden="true">
-                <h4 class="city-info__title">ЖИЛЬЕ</h4>
-                <p class="city-info__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <div class="city-info__wrap">
+                  <h4 class="city-info__title">ЖИЛЬЕ</h4>
+                  <p class="city-info__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
               </li>
               <li class="city-info__item">
                 <img class="city-info__image" src="img/icon-burger.svg.svg" alt="иконка бургера" aria-hidden="true">
-                <h4 class="city-info__title">ЕДА</h4>
-                <p class="city-info__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <div class="city-info__wrap">
+                  <h4 class="city-info__title">ЕДА</h4>
+                  <p class="city-info__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
               </li>
               <li class="city-info__item">
                 <img class="city-info__image" src="img/icon-gift.svg.svg" alt="иконка подарка" aria-hidden="true">
-                <h4 class="city-info__title">СУВЕНИРЫ</h4>
-                <p class="city-info__text">Не только китайского, но и местного производства!</p>
+                <div class="city-info__wrap">
+                  <h4 class="city-info__title">СУВЕНИРЫ</h4>
+                  <p class="city-info__text">Не только китайского, но и местного производства!</p>
+                </div>
               </li>
             </ul>
           </li>
-          <li class="description-item">
-            <div class="description-item__wrap description-item__wrap--type-dark">
+          <li class="description-item description-item--reverse-blocks">
+            <div class="description-item__wrapper description-item__wrapper--type-dark">
               <h3 class="description-item__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p class="description-item__number">— №2 —</p>
               <p class="description-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              <img class="description-item__photo" src="img/photo-bridge@1x.png" alt="фото моста">
             </div>
+            <img class="description-item__photo" src="img/photo-bridge@1x.png" alt="фото моста">
           </li>
           <li class="description-item">
-            <div class="description-item__wrap description-item--type-light">
+            <div class="description-item__wrapper description-item--type-light">
               <h3 class="description-item__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
               <p class="description-item__number">— №3 —</p>
               <p class="description-item__text">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="description-item">
-            <div class="description-item__wrap description-item--type-light">
+            <div class="description-item__wrapper description-item--type-light">
               <h3 class="description-item__title">КРАСИВАЯ ДОРОГА</h3>
               <p class="description-item__number">— №4 —</p>
               <p class="description-item__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="description-item">
-            <div class="description-item__wrap description-item--type-light">
+            <div class="description-item__wrapper description-item--type-light">
               <h3 class="description-item__title">МАЛО ТУРИСТОВ</h3>
               <p class="description-item__number">— №5 —</p>
               <p class="description-item__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
 

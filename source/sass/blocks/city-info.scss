@@ -1,0 +1,41 @@
+.city-info{
+  padding: 23px 18px 52px;
+  margin: 0;
+  align-items: center;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.city-info__item{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-top: 23px;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.city-info__wrap{
+  padding-left: 7px;
+}
+.city-info__title{
+  margin: 0;
+  padding-top: 8px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 26px;
+
+  @include tablet {
+    text-align: center;
+  }
+}
+.city-info__text{
+  text-align: left;
+  @include tablet {
+    text-align: center;
+  }
+}

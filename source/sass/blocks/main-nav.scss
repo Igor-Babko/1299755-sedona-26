@@ -4,10 +4,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+
+  @include tablet {
+    background-color: $color3;
+    color: $font-color1;
+  }
+
+  @include desktop {
+    background-color: $color3;
+    color: $font-color1;
+  }
 }
 
 .main-nav__link {
   @include title-phones;
   color: $font-color2;
   text-decoration: none;
+
+  @include tablet {
+    color: $font-color1;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
 }

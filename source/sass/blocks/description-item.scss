@@ -1,3 +1,78 @@
-.description-item__wrapper {
-  background-color: $color1;
+.description-item {
+  list-style-type: none;
+
+  &__wrap {
+    &__wrapper {
+      background-color: $color1;
+      padding-top: 54px;
+      padding-bottom: 40px;
+    }
+  }
 }
+
+.description-item__wrap--block-connection {
+  @include tablet {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.description-item__container {
+  max-width: 289px;
+  align-items: center;
+}
+
+.description-item__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.description-item__photo {
+  height: 260px;
+
+  @include tablet {
+    height: 256px;
+  }
+
+  @include desktop {
+    height: 256px;
+  }
+}
+
+.description-item__title {
+  padding-top: 54px;
+  margin: 0;
+}
+
+.description-item__text {
+  padding-bottom: 40px;
+}
+
+.description-item--reverse-blocks {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// .triangle::before {
+//   content: url("/img/white-triangle-2.png");
+//   position: absolute;
+//   overflow: hidden;
+//   margin: auto;
+//   height: 37px;
+//   width: 768px;
+//   left: 50%;
+//   bottom: auto;
+
+//   @include tablet {
+//     display: none;
+//   }
+// }

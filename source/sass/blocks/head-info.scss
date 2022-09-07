@@ -1,0 +1,22 @@
+.head-info {
+  max-width: 282px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 32px auto 16px;
+
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @include tablet {
+    max-width: 520px;
+  }
+}
